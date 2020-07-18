@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
+
 
 .header {
     width: 100%;
@@ -36,7 +39,7 @@
     font-size: 4em;
     color: #ffffff;
     text-shadow: 0 0 20px #ff00f2;
-    font-family: 'Monoton', cursive;
+    font-family: 'Monoton', arial;
 }
 
 .neon:after {
@@ -96,7 +99,7 @@
     height: 100%;
     border-bottom: 2px solid #ffffff;
     border-right: 2px solid #ffffff;
-    animation: animate 1.5s linear infinite;
+    animation: scrolldown 1.5s linear infinite;
     opacity: 0;
 }
 
@@ -113,7 +116,7 @@
     animation-delay: 0
 }
 
-@keyframes animate 
+@keyframes scrolldown 
 {
     0% {
         top: -5px;
@@ -131,3 +134,181 @@
         opacity: 0;
     }
 }
+
+.about {
+    background: #000
+}
+
+.about-me {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-neon {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background: linear-gradient(rgb(43, 42, 42),#000000);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 0 0 20px #6c6cb8;
+
+}
+
+.about-title {
+    text-align: center;
+    font-size: 28px;
+    padding-top: 30px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.about-sub {
+    float: right;
+    padding-top: 50px;
+    line-height: 40px;
+    text-transform: initial;
+    font-size: 26px;
+    padding-right: 17px;
+    font-family: 'Mulish', sans-serif;
+}
+
+
+.about-neon:before,
+.about-neon:after {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000 );
+    background-size: 500%;
+    z-index: -1;
+    animation: animate 30s ease infinite;
+}
+
+
+.about-neon:after {
+    filter: blur(25px);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.soc-icons{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 85%;
+    left: 48%;
+  }
+  .soc-icons li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .2s;
+  }
+  .soc-icons li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .1s;
+  }
+  
+  .soc-icons li:nth-child(1):before{
+    background: #4267B2;
+  }
+  .soc-icons li:nth-child(2):before{
+    background: #1DA1F2;
+  }
+  .soc-icons li:nth-child(3):before{
+    background: #E1306C;
+  }
+  .soc-icons li:nth-child(4):before{
+    background: #2867B2;
+  }
+  .soc-icons li:nth-child(5):before{
+    background: #ff0000;
+  }
+  .soc-icons li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+  .soc-icons li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #4267B2;
+  }
+  .soc-icons li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #1DA1F2;
+  }
+  .soc-icons li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #E1306C;
+  }
+  .soc-icons li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #2867B2;
+  }
+  .soc-icons li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #ff0000;
+  }
+  .soc-icons li:nth-child(1):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #4267B2;
+    text-shadow: 0 0 15px #4267B2;
+  }
+  .soc-icons li:nth-child(2):hover{
+    color: #ae2cd6;
+    box-shadow: 0 0 15px #ae2cd6;
+    text-shadow: 0 0 15px #ae2cd6;
+  }
+  .soc-icons li:nth-child(3):hover{
+    color: #ffffff;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+  }
+  .soc-icons li:nth-child(4):hover{
+    color: #a52e2e;
+    box-shadow: 0 0 15px #ff0000;
+    text-shadow: 0 0 15px #ffffff;
+  }
+  .soc-icons li:nth-child(5):hover{
+    color: #1DA1F2;
+    box-shadow: 0 0 15px #1DA1F2;
+    text-shadow: 0 0 15px #1DA1F2;
+  }
+  /* ul li:hover{
+    color: #ffa502;
+    box-shadow: 0 0 15px #d35400;
+    text-shadow: 0 0 15px #d35400;
+  } */
+  
