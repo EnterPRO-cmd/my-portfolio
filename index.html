@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 <body>
     <header class="header">
         <h3 class="portfolio">
@@ -32,10 +34,13 @@
                 </div>
                 <div class="about-sub">
                     Hi everyone, My name is Javlonbek. I am from Uzbekistan.<br> I am 19 years old. This is my portfolio
-                    site.<br> You can get to know me and my skills here.<br> I have been doing web site development for 1 year.<br>
+                    site.<br> You can get to know me and my skills here.<br> I have been doing web site development for
+                    1 year.<br>
                     I love playing video games and learning new things every day.<br>
-                    I know the HTML markup language and CSS cascading styles.<br> I am also able to develop websites with
-                    Bootstrap.<br> Soon I will fully train Javascript.<br> Below you can get acquainted with my skills in more
+                    I know the HTML markup language and CSS cascading styles.<br> I am also able to develop websites
+                    with
+                    Bootstrap.<br> Soon I will fully train Javascript.<br> Below you can get acquainted with my skills
+                    in more
                     detail
                 </div>
                 <div class="soc-icons">
@@ -49,8 +54,62 @@
         </main>
     </div>
 
+    <section id="circleBar">
+        <h1>My Professional Skills</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, ab?</p>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="round" data-value="0.50" data-size="200" data-thickness="12">
+                        <strong></strong>
+                        <span>
+                            <i class="fab fa-html5"></i>
+                            HTML Skills
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="round" data-value="0.50" data-size="200" data-thickness="12">
+                        <strong></strong>
+                        <span>
+                            <i class="fab fa-css3"></i>
+                            CSS3 Skills
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="round" data-value="0.10" data-size="200" data-thickness="12">
+                        <strong></strong>
+                        <span>
+                            <i class="fab fa-jsfiddle"></i>
+                            JavaScript Skills
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="round" data-value="0.65" data-size="200" data-thickness="12">
+                        <strong></strong>
+                        <span>
+                            <i class="fab fa-laptop"></i>
+                            Bootstrap Skills
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn" onClick="Circlle('.round');">Refresh</button>
+    </section>
 
 
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js"></script>
+    <script src="jquery/progress.js"></script>
 </body>
 
 </html>

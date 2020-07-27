@@ -49,7 +49,7 @@
     left: 0%;
     padding: 0 20px;
     z-index: -1;
-    color: #ff005b;
+    color: #ffffff;
     filter: blur(15px);
 }
 
@@ -136,7 +136,7 @@
 }
 
 .about {
-    background: #000
+    background: #000;
 }
 
 .about-me {
@@ -306,9 +306,46 @@
     box-shadow: 0 0 15px #1DA1F2;
     text-shadow: 0 0 15px #1DA1F2;
   }
-  /* ul li:hover{
-    color: #ffa502;
-    box-shadow: 0 0 15px #d35400;
-    text-shadow: 0 0 15px #d35400;
-  } */
   
+
+  #circleBar {
+    margin-top: 180px;
+    margin-bottom: 180px;
+    text-align: center;
+  }
+
+  #circleBar .round {
+    min-height: 255px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  #circleBar .round strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%);
+    font-size: 40px;
+    color: rgb(54, 5, 75);
+  }
+
+  #circleBar span {
+    display: block;
+    color: #999;
+    font-style: 17px;
+    margin-top: 10px;
+  }
+
+  #circleBar span i {
+    color: rgb(54, 5, 75);
+    font-size: 28px;
+    margin-right: 7px;
+  }
+
+  .btn:hover {
+    background-color: #151536;
+    color: #ffff;
+    
+  }
